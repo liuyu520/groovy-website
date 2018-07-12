@@ -15,7 +15,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'org.apache.httpcomponents:httpclient:4.5.1'
+        classpath 'org.apache.httpcomponents:httpclient:4.5.6'
     }
 }
 
