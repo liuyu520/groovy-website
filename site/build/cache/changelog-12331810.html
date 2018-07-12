@@ -1,0 +1,588 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+
+
+
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<title>Release Notes - ASF JIRA</title>
+<meta name="application-name" content="JIRA" data-name="jira" data-version="7.6.3"><meta name="ajs-dev-mode" content="false">
+<meta name="ajs-context-path" content="/jira">
+<meta name="ajs-version-number" content="7.6.3">
+<meta name="ajs-build-number" content="76005">
+<meta name="ajs-is-beta" content="false">
+<meta name="ajs-is-rc" content="false">
+<meta name="ajs-is-snapshot" content="false">
+<meta name="ajs-is-milestone" content="false">
+<meta name="ajs-remote-user" content="">
+<meta name="ajs-remote-user-fullname" content="">
+<meta name="ajs-user-locale" content="en_UK">
+<meta name="ajs-user-locale-group-separator" content=",">
+<meta name="ajs-app-title" content="ASF JIRA">
+<meta name="ajs-keyboard-shortcuts-enabled" content="true">
+<meta name="ajs-keyboard-accesskey-modifier" content="Alt">
+<meta name="ajs-enabled-dark-features" content="[&quot;com.atlassian.jira.agile.darkfeature.editable.detailsview&quot;,&quot;nps.survey.inline.dialog&quot;,&quot;com.atlassian.jira.agile.darkfeature.edit.closed.sprint.enabled&quot;,&quot;jira.plugin.devstatus.phasetwo&quot;,&quot;jira.frother.reporter.field&quot;,&quot;atlassian.rest.xsrf.legacy.enabled&quot;,&quot;jira.issue.status.lozenge&quot;,&quot;com.atlassian.jira.config.BIG_PIPE&quot;,&quot;com.atlassian.jira.projects.issuenavigator&quot;,&quot;com.atlassian.jira.config.PDL&quot;,&quot;jira.plugin.devstatus.phasetwo.enabled&quot;,&quot;atlassian.aui.raphael.disabled&quot;,&quot;app-switcher.new&quot;,&quot;frother.assignee.field&quot;,&quot;com.atlassian.jira.projects.ProjectCentricNavigation.Switch&quot;,&quot;sd.internal.base.off.thread.on.completion.events.enabled&quot;,&quot;jira.onboarding.cyoa&quot;,&quot;com.atlassian.jira.agile.darkfeature.kanplan.enabled&quot;,&quot;sd.slavalue.record.updated.date.enabled&quot;,&quot;com.atlassian.jira.config.ProjectConfig.MENU&quot;,&quot;com.atlassian.jira.projects.sidebar.DEFER_RESOURCES&quot;,&quot;com.atlassian.jira.agile.darkfeature.kanplan.epics.and.versions.enabled&quot;,&quot;com.atlassian.jira.agile.darkfeature.sprint.goal.enabled&quot;,&quot;jira.zdu.admin-updates-ui&quot;,&quot;jira.zdu.jmx-monitoring&quot;,&quot;sd.sla.improved.rendering.enabled&quot;,&quot;sd.canned.responses.enabled&quot;,&quot;sd.new.settings.sidebar.location.disabled&quot;,&quot;jira.zdu.cluster-upgrade-state&quot;,&quot;com.atlassian.jira.agile.darkfeature.splitissue&quot;,&quot;com.atlassian.jira.config.CoreFeatures.LICENSE_ROLES_ENABLED&quot;,&quot;com.atlassian.feedback.feedback-button-move-to-header-enable&quot;,&quot;jira.export.csv.enabled&quot;]">
+<meta name="ajs-in-admin-mode" content="false">
+<meta name="ajs-is-sysadmin" content="false">
+<meta name="ajs-is-admin" content="false">
+<meta name="ajs-outgoing-mail-enabled" content="true">
+<meta name="ajs-date-relativize" content="true">
+<meta name="ajs-date-time" content="HH:mm">
+<meta name="ajs-date-day" content="EEEE HH:mm">
+<meta name="ajs-date-dmy" content="dd/MMM/yy">
+<meta name="ajs-date-complete" content="dd/MMM/yy HH:mm">
+<script type="text/javascript">var AJS=AJS||{};AJS.debug=true;</script>
+
+
+    
+<meta id="atlassian-token" name="atlassian-token" content="A5KQ-2QAV-T4JA-FDED|4e8c548efb538675c8a07f722193ced4f4fd3ce9|lout">
+
+
+
+<link rel="shortcut icon" href="/jira/s/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/_/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/jira/osd.jsp" title="Release Notes - ASF JIRA"/>
+
+    
+
+
+
+<!--[if IE]><![endif]-->
+<script type="text/javascript">
+    (function() {
+        var contextPath = '/jira';
+        var eventBuffer = [];
+
+        function printDeprecatedMsg() {
+            if (console && console.warn) {
+                console.warn('DEPRECATED JS - contextPath global variable has been deprecated since 7.4.0. Use `wrm/context-path` module instead.');
+            }
+        }
+
+        function sendEvent(analytics, postfix) {
+            analytics.send({
+                name: 'js.globals.contextPath.' + postfix
+            });
+        }
+
+        function sendDeprecatedEvent(postfix) {
+            try {
+                var analytics = require('jira/analytics');
+                if (eventBuffer.length) {
+                    eventBuffer.forEach(function(value) {
+                        sendEvent(analytics, value);
+                    });
+                    eventBuffer = [];
+                }
+
+                if (postfix) {
+                    sendEvent(analytics, postfix);
+                }
+            } catch(ex) {
+                eventBuffer.push(postfix);
+                setTimeout(sendDeprecatedEvent, 1000);
+            }
+        }
+
+        Object.defineProperty(window, 'contextPath', {
+            get: function() {
+                printDeprecatedMsg();
+                sendDeprecatedEvent('get');
+                return contextPath;
+            },
+            set: function(value) {
+                printDeprecatedMsg();
+                sendDeprecatedEvent('set');
+                contextPath = value;
+            }
+        });
+    })();
+
+</script>
+<script>
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};window.WRM._unparsedErrors=window.WRM._unparsedErrors||{};
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"/jira\"";
+WRM._unparsedData["jira.webresources:feature-flags.feature-flag-data"]="{\"enabled-feature-keys\":[\"com.atlassian.jira.agile.darkfeature.editable.detailsview\",\"nps.survey.inline.dialog\",\"com.atlassian.jira.agile.darkfeature.edit.closed.sprint.enabled\",\"jira.plugin.devstatus.phasetwo\",\"jira.frother.reporter.field\",\"atlassian.rest.xsrf.legacy.enabled\",\"jira.issue.status.lozenge\",\"com.atlassian.jira.config.BIG_PIPE\",\"com.atlassian.jira.projects.issuenavigator\",\"com.atlassian.jira.config.PDL\",\"jira.plugin.devstatus.phasetwo.enabled\",\"atlassian.aui.raphael.disabled\",\"app-switcher.new\",\"frother.assignee.field\",\"com.atlassian.jira.projects.ProjectCentricNavigation.Switch\",\"sd.internal.base.off.thread.on.completion.events.enabled\",\"jira.onboarding.cyoa\",\"com.atlassian.jira.agile.darkfeature.kanplan.enabled\",\"sd.slavalue.record.updated.date.enabled\",\"com.atlassian.jira.config.ProjectConfig.MENU\",\"com.atlassian.jira.projects.sidebar.DEFER_RESOURCES\",\"com.atlassian.jira.agile.darkfeature.kanplan.epics.and.versions.enabled\",\"com.atlassian.jira.agile.darkfeature.sprint.goal.enabled\",\"jira.zdu.admin-updates-ui\",\"jira.zdu.jmx-monitoring\",\"sd.sla.improved.rendering.enabled\",\"sd.canned.responses.enabled\",\"sd.new.settings.sidebar.location.disabled\",\"jira.zdu.cluster-upgrade-state\",\"com.atlassian.jira.agile.darkfeature.splitissue\",\"com.atlassian.jira.config.CoreFeatures.LICENSE_ROLES_ENABLED\",\"com.atlassian.feedback.feedback-button-move-to-header-enable\",\"jira.export.csv.enabled\"],\"feature-flag-states\":{\"com.atlassian.jira.agile.darkfeature.kanplan\":false,\"sd.internal.base.off.thread.on.completion.events\":false,\"jira.instrumentation.laas\":false,\"com.atlassian.jira.agile.darkfeature.edit.closed.sprint\":false,\"com.atlassian.jira.issuetable.draggable\":true,\"jira.create.linked.issue\":true,\"com.atlassian.jira.agile.darkfeature.sprint.goal\":false,\"jira.sal.host.connect.accessor.existing.transaction.will.create.transactions\":true,\"jira.jql.suggestrecentfields\":false,\"com.atlassian.jira.agile.darkfeature.kanplan.epics.and.versions\":false,\"jira.jql.smartautoselectfirst\":false,\"com.atlassian.jira.agile.darkfeature.optimistic.transitions\":true,\"com.atlassian.jira.issuetable.move.links.hidden\":true,\"jira.priorities.per.project\":true,\"com.atlassian.jira.upgrade.startup.fix.index\":true,\"jira.renderer.consider.variable.format\":true}}";
+WRM._unparsedData["jira.webresources:default-comment-security-level.DefaultCommentSecurityLevelHelpLink"]="{\"extraClasses\":\"default-comment-level-help\",\"title\":\"Commenting on an Issue\",\"url\":\"https://docs.atlassian.com/jira/jcore-docs-076/Editing+and+collaborating+on+issues#Editingandcollaboratingonissues-restrictacomment\",\"isLocal\":false}";
+WRM._unparsedData["com.atlassian.analytics.analytics-client:policy-update-init.policy-update-data-provider"]="false";
+WRM._unparsedData["com.atlassian.analytics.analytics-client:programmatic-analytics-init.programmatic-analytics-data-provider"]="false";
+WRM._unparsedData["jira.webresources:dateFormatProvider.allFormats"]="{\"dateFormats\":{\"meridiem\":[\"AM\",\"PM\"],\"eras\":[\"BC\",\"AD\"],\"months\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\"],\"monthsShort\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\"],\"weekdaysShort\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"],\"weekdays\":[\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"]},\"lookAndFeelFormats\":{\"relativize\":\"true\",\"time\":\"HH:mm\",\"day\":\"EEEE HH:mm\",\"dmy\":\"dd/MMM/yy\",\"complete\":\"dd/MMM/yy HH:mm\"}}";
+WRM._unparsedData["jira.webresources:avatar-picker.data"]="{}";
+WRM._unparsedData["com.atlassian.feedback.jira-feedback-plugin:button-resources-init.data"]="{\"jira.feedback.plugin.issue.collector.core\":\"https://jira.atlassian.com/s/576e9ab86257d4f65f6ea5b6dd50de44-T/en_UK3ljiw5/71006/b6b48b2829824b869586ac216d119363/2.0.11/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs.js?locale=en-UK&collectorId=abbf546d\",\"jira.feedback.plugin.issue.collector.default\":\"https://jira.atlassian.com/s/576e9ab86257d4f65f6ea5b6dd50de44-T/en_UK3ljiw5/71006/b6b48b2829824b869586ac216d119363/2.0.11/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs.js?locale=en-UK&collectorId=abbf546d\",\"jira.feedback.plugin.issue.collector.service.desk\":\"https://jira.atlassian.com/s/576e9ab86257d4f65f6ea5b6dd50de44-T/en_UK3ljiw5/71006/b6b48b2829824b869586ac216d119363/2.0.11/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-UK&collectorId=a698db21\",\"jira.feedback.plugin.issue.collector.software\":\"https://jira.atlassian.com/s/576e9ab86257d4f65f6ea5b6dd50de44-T/en_UK3ljiw5/71006/b6b48b2829824b869586ac216d119363/2.0.11/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs.js?locale=en-UK&collectorId=abbf546d\",\"isHeaderFeedbackButtonEnabled\":true}";
+WRM._unparsedData["com.atlassian.jira.jira-header-plugin:dismissedFlags.flags"]="{\"dismissed\":[]}";
+WRM._unparsedData["com.atlassian.jira.jira-header-plugin:newsletter-signup-tip-init.newsletterSignup"]="{\"signupDescription\":\"Get updates, inspiration and best practices from the team behind JIRA.\",\"formUrl\":\"https://www.atlassian.com/apis/exact-target/{0}/subscribe?mailingListId=1401671\",\"signupTitle\":\"Sign up!\",\"signupId\":\"newsletter-signup-tip\",\"showNewsletterTip\":false}";
+WRM._unparsedData["com.atlassian.jira.project-templates-plugin:project-templates-plugin-resources.ptAnalyticsData"]="{\"instanceCreatedDate\":\"2011-01-31\"}";
+WRM._unparsedData["com.atlassian.jira.plugins.jira-wiki-editor:wiki-editor-resources.help-data"]="{\"showHelp\":true,\"editorDocumentationUrl\":[\"https://docs.atlassian.com/jira/jcore-docs-076/Visual+editing\"],\"editorDocumentationTitle\":[\"Show me documentation for the visual editor\"]}";
+WRM._unparsedData["com.atlassian.jira.plugins.jira-wiki-editor:wiki-editor-resources.thumbnails-allowed"]="false";
+WRM._unparsedData["jira.webresources:user-message-flags.adminLockout"]="{}";
+WRM._unparsedData["com.atlassian.plugins.helptips.jira-help-tips:help-tip-manager.JiraHelpTipData"]="{\"anonymous\":true}";
+WRM._unparsedData["jira.request.correlation-id"]="\"a889c9d941d5e\"";
+if(window.WRM._dataArrived)window.WRM._dataArrived();</script>
+<link type="text/css" rel="stylesheet" href="/jira/s/a8a4711bc3f2eb261d8c8fd9fbcbba8b-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/1fca1750044f2777c977e8d8cc023344/_/download/contextbatch/css/_super/batch.css" data-wrm-key="_super" data-wrm-batch-type="context" media="all">
+<link type="text/css" rel="stylesheet" href="/jira/s/fd2bbba608e157ab8cbd2e1bd42e7375-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/9815e5d18b1ab49b0e5a5652af1e6c61/_/download/contextbatch/css/atl.general,jira.general,-_super/batch.css?agile_global_admin_condition=true&amp;hc-enabled=true&amp;is-server-instance=true&amp;jag=true&amp;nps-acknowledged=true" data-wrm-key="atl.general,jira.general,-_super" data-wrm-batch-type="context" media="all">
+<link type="text/css" rel="stylesheet" href="/jira/s/8fcc2936167ff220429a39e134b51bdf-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/7f2bf9d5a9b5abc038c9886a98a5fdeb/_/download/contextbatch/css/jira.global,-_super/batch.css" data-wrm-key="jira.global,-_super" data-wrm-batch-type="context" media="all">
+<link type="text/css" rel="stylesheet" href="/jira/s/3ef4e7da799e03d12743bbd6fc505a5e-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/1.0/_/download/batch/jira.webresources:calendar-lib/jira.webresources:calendar-lib.css" data-wrm-key="jira.webresources:calendar-lib" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/jira/s/0be82f6b4ed426c000e8b793ff2da87d-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/1.0/_/download/batch/jira.webresources:autocomplete/jira.webresources:autocomplete.css" data-wrm-key="jira.webresources:autocomplete" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/jira/s/0be82f6b4ed426c000e8b793ff2da87d-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/1.0/_/download/batch/jira.webresources:groupbrowser/jira.webresources:groupbrowser.css" data-wrm-key="jira.webresources:groupbrowser" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/jira/s/0be82f6b4ed426c000e8b793ff2da87d-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/1.0/_/download/batch/jira.webresources:group-pickers/jira.webresources:group-pickers.css" data-wrm-key="jira.webresources:group-pickers" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/jira/s/1b4503c04f45d68ae09fb22125331a69-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/6.1.0/_/download/batch/com.atlassian.auiplugin:aui-labels/com.atlassian.auiplugin:aui-labels.css" data-wrm-key="com.atlassian.auiplugin:aui-labels" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/jira/s/f13b5cd744a217f3bdcffd1f42cbb763-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/1.0/_/download/batch/jira.webresources:global-static/jira.webresources:global-static.css" data-wrm-key="jira.webresources:global-static" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/jira/s/611672383f6cab00ab202241ba6f9d68-T/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/7.6.3/_/download/batch/com.atlassian.feedback.jira-feedback-plugin:button-resources-init/com.atlassian.feedback.jira-feedback-plugin:button-resources-init.css" data-wrm-key="com.atlassian.feedback.jira-feedback-plugin:button-resources-init" data-wrm-batch-type="resource" media="all">
+<script type="text/javascript" src="/jira/s/997a224b858e481f0a8df8f37c38bcf9-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/1fca1750044f2777c977e8d8cc023344/_/download/contextbatch/js/_super/batch.js?locale=en-UK" data-wrm-key="_super" data-wrm-batch-type="context" data-initially-rendered></script>
+<script type="text/javascript" src="/jira/s/5221ebc4a48ed286bb03d4dda20824f5-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/9815e5d18b1ab49b0e5a5652af1e6c61/_/download/contextbatch/js/atl.general,jira.general,-_super/batch.js?agile_global_admin_condition=true&amp;hc-enabled=true&amp;is-server-instance=true&amp;jag=true&amp;locale=en-UK&amp;nps-acknowledged=true" data-wrm-key="atl.general,jira.general,-_super" data-wrm-batch-type="context" data-initially-rendered></script>
+<script type="text/javascript" src="/jira/s/ab07711f680db86be39b930c094779ac-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/871d45c9f322a22cb3aa9b7948a69803/_/download/contextbatch/js/atl.global,-_super/batch.js?locale=en-UK" data-wrm-key="atl.global,-_super" data-wrm-batch-type="context" data-initially-rendered></script>
+<script type="text/javascript" src="/jira/s/71718c0a0686227199535cab090bdece-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/7f2bf9d5a9b5abc038c9886a98a5fdeb/_/download/contextbatch/js/jira.global,-_super/batch.js?locale=en-UK" data-wrm-key="jira.global,-_super" data-wrm-batch-type="context" data-initially-rendered></script>
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/1.0/_/download/batch/jira.webresources:calendar-lib/jira.webresources:calendar-lib.js" data-wrm-key="jira.webresources:calendar-lib" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/1.0/_/download/batch/jira.webresources:calendar/jira.webresources:calendar.js" data-wrm-key="jira.webresources:calendar" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/1.0/_/download/batch/jira.webresources:autocomplete/jira.webresources:autocomplete.js" data-wrm-key="jira.webresources:autocomplete" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/jira/s/8bc9cc68161600c47e485abbb4a06198-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/1.0/_/download/batch/jira.webresources:group-label-lozenge/jira.webresources:group-label-lozenge.js?locale=en-UK" data-wrm-key="jira.webresources:group-label-lozenge" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/1.0/_/download/batch/jira.webresources:groupbrowser/jira.webresources:groupbrowser.js" data-wrm-key="jira.webresources:groupbrowser" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/jira/s/4f2e2a15b8df0e044e29663eafe0efcb-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/1.0/_/download/batch/jira.webresources:group-pickers/jira.webresources:group-pickers.js?locale=en-UK" data-wrm-key="jira.webresources:group-pickers" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/1.0/_/download/batch/jira.webresources:ie-imitation-placeholder/jira.webresources:ie-imitation-placeholder.js" data-wrm-key="jira.webresources:ie-imitation-placeholder" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/jira/s/d751b1cfc852f1df06289aef8056fa2b-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/1.0/_/download/batch/jira.webresources:jira-project-issuetype-fields/jira.webresources:jira-project-issuetype-fields.js?locale=en-UK" data-wrm-key="jira.webresources:jira-project-issuetype-fields" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/jira/s/4f2e2a15b8df0e044e29663eafe0efcb-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/1.0/_/download/batch/jira.webresources:jira-fields/jira.webresources:jira-fields.js?locale=en-UK" data-wrm-key="jira.webresources:jira-fields" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/1.0/_/download/batch/jira.webresources:calendar-en/jira.webresources:calendar-en.js" data-wrm-key="jira.webresources:calendar-en" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/1.0/_/download/batch/jira.webresources:calendar-localisation-moment/jira.webresources:calendar-localisation-moment.js" data-wrm-key="jira.webresources:calendar-localisation-moment" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/4.5.6/_/download/batch/com.atlassian.jira.jira-projects-plugin:data/com.atlassian.jira.jira-projects-plugin:data.js" data-wrm-key="com.atlassian.jira.jira-projects-plugin:data" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/4.5.6/_/download/batch/com.atlassian.jira.jira-projects-plugin:projects-api/com.atlassian.jira.jira-projects-plugin:projects-api.js" data-wrm-key="com.atlassian.jira.jira-projects-plugin:projects-api" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/7.6.3/_/download/batch/com.atlassian.feedback.jira-feedback-plugin:button-resources/com.atlassian.feedback.jira-feedback-plugin:button-resources.js" data-wrm-key="com.atlassian.feedback.jira-feedback-plugin:button-resources" data-wrm-batch-type="resource" data-initially-rendered></script>
+<link type="text/css" rel="stylesheet" href="/jira/s/95a4826c265852f4904f1e0e7300df68-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/e0de73613a1027de08f3da6a45e1d1a2/_/download/contextbatch/css/jira.global.look-and-feel,-_super/batch.css" data-wrm-key="jira.global.look-and-feel,-_super" data-wrm-batch-type="context" media="all">
+
+<script type="text/javascript" src="/jira/rest/api/1.0/shortcuts/76005/b9cf0fd49a42f1b3fdab8cc53ecd79d1/shortcuts.js"></script>
+
+
+    
+    
+
+</head>
+<body id="jira" class="aui-layout aui-theme-default " data-version="7.6.3">
+<div id="page">
+    <header id="header" role="banner">
+        
+
+
+
+
+
+
+<script>
+require(["jquery", "jira/license-banner"], function ($, licenseBanner) {
+    $(function () {
+        licenseBanner.showLicenseBanner("");
+        licenseBanner.showLicenseFlag("");
+    });
+});
+</script>
+
+
+
+        
+
+
+
+
+        
+
+
+
+
+<nav class="aui-header aui-dropdown2-trigger-group" role="navigation"><div class="aui-header-inner"><div class="aui-header-before"><a class=" aui-dropdown2-trigger app-switcher-trigger" aria-controls="app-switcher" aria-haspopup="true" role="button" tabindex="0" data-aui-trigger href="#app-switcher"><span class="aui-icon aui-icon-small aui-iconfont-appswitcher">Linked Applications</span></a><div id="app-switcher" class="aui-dropdown2 aui-style-default" role="menu" aria-hidden="true" data-is-switcher="true" data-environment="{&quot;isUserAdmin&quot;:false,&quot;isAppSuggestionAvailable&quot;:false,&quot;isSiteAdminUser&quot;:false}"><div role="application"><div class="app-switcher-loading">Loading&hellip;</div></div></div></div><div class="aui-header-primary"><h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="https://issues.apache.org/jira/secure/MyJiraHome.jspa"><img src="/jira/s/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/_/jira-logo-scaled.png" alt="ASF JIRA" /></a></h1><ul class='aui-nav'><li><a href="/jira/secure/Dashboard.jspa" class=" aui-nav-link aui-dropdown2-trigger aui-dropdown2-ajax" id="home_link" aria-haspopup="true" aria-controls="home_link-content" title="View and manage your dashboards" accesskey="d">Dashboards</a><div class="aui-dropdown2 aui-style-default" id="home_link-content" data-aui-dropdown2-ajax-key="home_link"></div></li><li><a href="/jira/secure/BrowseProjects.jspa" class=" aui-nav-link aui-dropdown2-trigger aui-dropdown2-ajax" id="browse_link" aria-haspopup="true" aria-controls="browse_link-content" title="View recent projects and browse a list of projects" accesskey="p">Projects</a><div class="aui-dropdown2 aui-style-default" id="browse_link-content" data-aui-dropdown2-ajax-key="browse_link"></div></li><li><a href="/jira/issues/" class=" aui-nav-link aui-dropdown2-trigger aui-dropdown2-ajax" id="find_link" aria-haspopup="true" aria-controls="find_link-content" title="Search for issues and view recent issues" accesskey="i">Issues</a><div class="aui-dropdown2 aui-style-default" id="find_link-content" data-aui-dropdown2-ajax-key="find_link"></div></li>
+</ul></div><div class="aui-header-secondary"><ul class='aui-nav'><li id="quicksearch-menu">
+    <form action="/jira/secure/QuickSearch.jspa" method="get" id="quicksearch" class="aui-quicksearch dont-default-focus ajs-dirty-warning-exempt">
+        <input id="quickSearchInput" class="search" type="text" title="Search" placeholder="Search" name="searchString" accessKey="q" />
+        <input type="submit" class="hidden" value="Search">
+    </form>
+</li>
+<li><a class="jira-feedback-plugin" role="button" aria-haspopup="true" id="jira-header-feedback-link" href="#"><span class="aui-icon aui-icon-small jira-feedback-plugin-icon">Give feedback to Atlassian</span></a></li>
+
+
+
+    <li id="system-help-menu">
+        <a class="aui-nav-link aui-dropdown2-trigger" id="help_menu" aria-haspopup="true" aria-owns="system-help-menu-content" href="https://docs.atlassian.com/jira/jcore-docs-076/"  target="$textUtils.htmlEncode($rootHelpMenuItem.params.target)"  title="Help"><span class="aui-icon aui-icon-small aui-iconfont-help">Help</span></a>
+        <div id="system-help-menu-content" class="aui-dropdown2 aui-style-default">
+                            <div class="aui-dropdown2-section">
+                                                                <ul id="jira-help" class="aui-list-truncate">
+                                                            <li>
+                                    <a id="view_core_help" class="aui-nav-link " title="Go to the online documentation for JIRA Core" href="https://docs.atlassian.com/jira/jcore-docs-076/"  target="_blank" >JIRA Core help</a>
+                                </li>
+                                                            <li>
+                                    <a id="keyshortscuthelp" class="aui-nav-link " title="Get more information about JIRA's Keyboard Shortcuts" href="/jira/secure/ViewKeyboardShortcuts!default.jspa"  target="_blank" >Keyboard Shortcuts</a>
+                                </li>
+                                                            <li>
+                                    <a id="view_about" class="aui-nav-link " title="Get more information about JIRA" href="/jira/secure/AboutPage.jspa" >About JIRA</a>
+                                </li>
+                                                            <li>
+                                    <a id="view_credits" class="aui-nav-link " title="See who did what" href="/jira/secure/JiraCreditsPage!default.jspa"  target="_blank" >JIRA Credits</a>
+                                </li>
+                                                    </ul>
+                                    </div>
+                    </div>
+    </li>
+
+
+
+
+
+
+
+
+
+<li id="user-options">
+            <a class="aui-nav-link login-link" href="/jira/login.jsp?os_destination=%2Fsecure%2FReleaseNote.jspa%3Fversion%3D12331810%26styleName%3DText%26projectId%3D12318123">Log In</a>
+                <div id="user-options-content" class="aui-dropdown2 aui-style-default">
+                            <div class="aui-dropdown2-section">
+                                                        </div>
+                    </div>
+    </li>
+</ul></div></div><!-- .aui-header-inner--></nav><!-- .aui-header -->
+    </header>
+    
+
+
+
+    <section id="content" role="main">
+        
+    <div class="aui-page-panel"><div class="aui-page-panel-inner">
+            <section class="aui-page-panel-content">
+                    <title>Release Notes - Groovy - Version 1.1-rc-1 - Text format</title>
+<body>
+
+<div class="ops-cont">
+    <ul class="ops">
+        <li>
+            <a class="button first last" href="/jira/secure/ConfigureReleaseNote.jspa?projectId=12318123&version=12331810">Configure Release Notes</a>
+        </li>
+    </ul>
+</div>
+
+            <h2>Sub-task</h2>
+        <ul>
+                    <li>[<a href='/jira/browse/GROOVY-1902'>GROOVY-1902</a>] - add check for usage of generics only with generics enabled classes and with the correct number of parameters</li>
+                    <li>[<a href='/jira/browse/GROOVY-2151'>GROOVY-2151</a>] - Filter stack traces in GroovyConsole</li>
+                </ul>
+                    <h2>Bug</h2>
+        <ul>
+                    <li>[<a href='/jira/browse/GROOVY-1186'>GROOVY-1186</a>] - NullpointerException occurs when unboxing boolean Java return type where no return value specified from Java interface implemented in Groovy</li>
+                    <li>[<a href='/jira/browse/GROOVY-1323'>GROOVY-1323</a>] - Inline conditional List &lt;&lt; not being executed fully.</li>
+                    <li>[<a href='/jira/browse/GROOVY-1440'>GROOVY-1440</a>] - println /hello/ results in unexpected token exception</li>
+                    <li>[<a href='/jira/browse/GROOVY-1503'>GROOVY-1503</a>] - SimpleTemplateEngine drops Windows new-line character (\r)</li>
+                    <li>[<a href='/jira/browse/GROOVY-1517'>GROOVY-1517</a>] - DomToGroovy outputs builder code not compatible with MarkupBuilder</li>
+                    <li>[<a href='/jira/browse/GROOVY-1549'>GROOVY-1549</a>] - Array equality is not treated same as List equality</li>
+                    <li>[<a href='/jira/browse/GROOVY-1738'>GROOVY-1738</a>] - Color settings not saving</li>
+                    <li>[<a href='/jira/browse/GROOVY-1744'>GROOVY-1744</a>] - Extreme performance problem when calling closures using &#39;shorthand&#39; notation</li>
+                    <li>[<a href='/jira/browse/GROOVY-1776'>GROOVY-1776</a>] - GroovyJ 0.1.9 corrupts compiler caches in IDEA Selena</li>
+                    <li>[<a href='/jira/browse/GROOVY-1860'>GROOVY-1860</a>] - Problem calling override method with different return type.</li>
+                    <li>[<a href='/jira/browse/GROOVY-1863'>GROOVY-1863</a>] - Groovy compiler executes code it is compiling</li>
+                    <li>[<a href='/jira/browse/GROOVY-1913'>GROOVY-1913</a>] - Problem when running script that uses java covariants</li>
+                    <li>[<a href='/jira/browse/GROOVY-1962'>GROOVY-1962</a>] - add a stream based class reader and an optional java5 module</li>
+                    <li>[<a href='/jira/browse/GROOVY-1978'>GROOVY-1978</a>] - static imports not working with groovy classes</li>
+                    <li>[<a href='/jira/browse/GROOVY-1995'>GROOVY-1995</a>] - minus(List self, Collection removeMe) throws IllegalStateException for dupplicate values</li>
+                    <li>[<a href='/jira/browse/GROOVY-2126'>GROOVY-2126</a>] - ClassCastException when using java.util.prefs package</li>
+                    <li>[<a href='/jira/browse/GROOVY-2130'>GROOVY-2130</a>] - Use of java iterators in for loop is syntax error</li>
+                    <li>[<a href='/jira/browse/GROOVY-2132'>GROOVY-2132</a>] - Filter stacktraces in the new shell</li>
+                    <li>[<a href='/jira/browse/GROOVY-2133'>GROOVY-2133</a>] - Static imports not working inside closures</li>
+                    <li>[<a href='/jira/browse/GROOVY-2136'>GROOVY-2136</a>] - Static import of properties and fields does not work</li>
+                    <li>[<a href='/jira/browse/GROOVY-2137'>GROOVY-2137</a>] - Enum class does not load</li>
+                    <li>[<a href='/jira/browse/GROOVY-2139'>GROOVY-2139</a>] - Can not  init instances with super(...)</li>
+                    <li>[<a href='/jira/browse/GROOVY-2141'>GROOVY-2141</a>] - ExpandoMetaClass has concurrency modification issues with multiple threads</li>
+                    <li>[<a href='/jira/browse/GROOVY-2150'>GROOVY-2150</a>] - ClosureMetaClass regression (mapping of ArrayLIst to parameters)</li>
+                    <li>[<a href='/jira/browse/GROOVY-2152'>GROOVY-2152</a>] - Stacktrace in the new shell</li>
+                    <li>[<a href='/jira/browse/GROOVY-2153'>GROOVY-2153</a>] - BUG! exception in phase &#39;semantic analysis&#39; </li>
+                    <li>[<a href='/jira/browse/GROOVY-2155'>GROOVY-2155</a>] - Some additional static import regressions since beta-2</li>
+                    <li>[<a href='/jira/browse/GROOVY-2156'>GROOVY-2156</a>] - Parameter annotations cannot be queried at runtime</li>
+                    <li>[<a href='/jira/browse/GROOVY-2157'>GROOVY-2157</a>] - Elvis operator is evaluating the &quot;true&quot; expression twice</li>
+                    <li>[<a href='/jira/browse/GROOVY-2158'>GROOVY-2158</a>] - Code crashing in new shell but not in old</li>
+                    <li>[<a href='/jira/browse/GROOVY-2159'>GROOVY-2159</a>] - Stub generator does not generate stubs for Groovy sub classes</li>
+                    <li>[<a href='/jira/browse/GROOVY-2165'>GROOVY-2165</a>] - GroovyClassLoader dead lock situation with multiple threads</li>
+                    <li>[<a href='/jira/browse/GROOVY-2166'>GROOVY-2166</a>] - ExpandoMetaClass causes exceptions with multiple threads, need to sync on isInitialised()</li>
+                    <li>[<a href='/jira/browse/GROOVY-2167'>GROOVY-2167</a>] - Occasional NPE with multiple threads with class caching mechanism</li>
+                    <li>[<a href='/jira/browse/GROOVY-2169'>GROOVY-2169</a>] - NPE in GroovyScriptEngine</li>
+                    <li>[<a href='/jira/browse/GROOVY-2170'>GROOVY-2170</a>] - Purge commands don&#39;t work anymore in the new shell</li>
+                    <li>[<a href='/jira/browse/GROOVY-2180'>GROOVY-2180</a>] - LoaderConfiguration is broken for relative paths</li>
+                    <li>[<a href='/jira/browse/GROOVY-2181'>GROOVY-2181</a>] - NPE generated groovydoc documentation</li>
+                    <li>[<a href='/jira/browse/GROOVY-2187'>GROOVY-2187</a>] - GString as String[] returns a 1-element array with the whole text</li>
+                    <li>[<a href='/jira/browse/GROOVY-2188'>GROOVY-2188</a>] - missing coercion for array</li>
+                    <li>[<a href='/jira/browse/GROOVY-2190'>GROOVY-2190</a>] - check generics usage in class header</li>
+                    <li>[<a href='/jira/browse/GROOVY-2194'>GROOVY-2194</a>] - The method primitiveArrayToList doesn&#39;t checks for nulls inside arrays causing NPE</li>
+                    <li>[<a href='/jira/browse/GROOVY-2198'>GROOVY-2198</a>] - owner/delegatechain is broken for multiple delegates</li>
+                </ul>
+                    <h2>New Feature</h2>
+        <ul>
+                    <li>[<a href='/jira/browse/GROOVY-174'>GROOVY-174</a>] - Round Peg, Square Hole</li>
+                    <li>[<a href='/jira/browse/GROOVY-604'>GROOVY-604</a>] -  Provide parsing errors and warnings</li>
+                    <li>[<a href='/jira/browse/GROOVY-605'>GROOVY-605</a>] -  Automatic imports</li>
+                    <li>[<a href='/jira/browse/GROOVY-608'>GROOVY-608</a>] - Provide refactoring capabilities</li>
+                    <li>[<a href='/jira/browse/GROOVY-611'>GROOVY-611</a>] - Intention actions</li>
+                    <li>[<a href='/jira/browse/GROOVY-614'>GROOVY-614</a>] - Add an Outline/File structure pane</li>
+                    <li>[<a href='/jira/browse/GROOVY-1851'>GROOVY-1851</a>] - Expose unary plus and unary minus operators as interceptable method calls: positive() and negative()</li>
+                    <li>[<a href='/jira/browse/GROOVY-2131'>GROOVY-2131</a>] - Map implementation that fires PropertyChangeEvents</li>
+                    <li>[<a href='/jira/browse/GROOVY-2174'>GROOVY-2174</a>] - Add commands to capture/manage a complete transcript of a groovysh session</li>
+                    <li>[<a href='/jira/browse/GROOVY-2175'>GROOVY-2175</a>] - Add something like pythons {{sys.displayhook}} to the new groovysh</li>
+                    <li>[<a href='/jira/browse/GROOVY-2176'>GROOVY-2176</a>] - Install SecurityManager for groovysh to prevent unwanted System.exit()</li>
+                </ul>
+                    <h2>Improvement</h2>
+        <ul>
+                    <li>[<a href='/jira/browse/GROOVY-1314'>GROOVY-1314</a>] - support covariant return types (&amp; generics)</li>
+                    <li>[<a href='/jira/browse/GROOVY-1737'>GROOVY-1737</a>] - Map unary negation operator to a method and be able to overload it via a Category</li>
+                    <li>[<a href='/jira/browse/GROOVY-1832'>GROOVY-1832</a>] - XMLParser: remove method on NodeList returns true (success).  But, Node is not removed.</li>
+                    <li>[<a href='/jira/browse/GROOVY-1835'>GROOVY-1835</a>] - Allow string coercion into classes</li>
+                    <li>[<a href='/jira/browse/GROOVY-1977'>GROOVY-1977</a>] - Allow static and default to be used as property names after the dereference operator</li>
+                    <li>[<a href='/jira/browse/GROOVY-1979'>GROOVY-1979</a>] - SimpleTemplateEngine (and poentially other TemplateEngines) should allow caller to specify classloader</li>
+                    <li>[<a href='/jira/browse/GROOVY-1996'>GROOVY-1996</a>] - Groovy-all pom.xml has dependency to an outdated version of Castor</li>
+                    <li>[<a href='/jira/browse/GROOVY-2053'>GROOVY-2053</a>] - Re-write InteractiveShell (aka. groovysh) in Groovy</li>
+                    <li>[<a href='/jira/browse/GROOVY-2068'>GROOVY-2068</a>] - Extract a FactoryBuilder from SwingBuilder</li>
+                    <li>[<a href='/jira/browse/GROOVY-2102'>GROOVY-2102</a>] - Groovy-all pom.xml omits &lt;optional&gt; tag for its optional dependencies</li>
+                    <li>[<a href='/jira/browse/GROOVY-2140'>GROOVY-2140</a>] - Handle Null Attributes in MarkupBuilder</li>
+                    <li>[<a href='/jira/browse/GROOVY-2142'>GROOVY-2142</a>] - Add new metaClass property to all objects to unify access to meta class across instances</li>
+                    <li>[<a href='/jira/browse/GROOVY-2162'>GROOVY-2162</a>] - The unary negate &quot;~&quot; operator could work with any kind of object, not just numbers and strings</li>
+                    <li>[<a href='/jira/browse/GROOVY-2172'>GROOVY-2172</a>] - Change the new groovysh IO debug/verbose/quiet to a single verbosity field</li>
+                    <li>[<a href='/jira/browse/GROOVY-2173'>GROOVY-2173</a>] - Create a Main CLI class for the new groovysh, to free Groovysh from those details</li>
+                    <li>[<a href='/jira/browse/GROOVY-2179'>GROOVY-2179</a>] - Make the *new* groovysh the default</li>
+                </ul>
+                                                                                                                                                    
+
+<a name="editarea"></a>
+<h2>Edit/Copy Release Notes</h2>
+<p>The text area below allows the project release notes to be edited and copied to another document.</p>
+
+<textarea rows="40" cols="120">
+
+Release Notes - Groovy - Version 1.1-rc-1
+
+** Sub-task
+    * [GROOVY-1902] - add check for usage of generics only with generics enabled classes and with the correct number of parameters
+    * [GROOVY-2151] - Filter stack traces in GroovyConsole
+
+
+** Bug
+    * [GROOVY-1186] - NullpointerException occurs when unboxing boolean Java return type where no return value specified from Java interface implemented in Groovy
+    * [GROOVY-1323] - Inline conditional List &lt;&lt; not being executed fully.
+    * [GROOVY-1440] - println /hello/ results in unexpected token exception
+    * [GROOVY-1503] - SimpleTemplateEngine drops Windows new-line character (\r)
+    * [GROOVY-1517] - DomToGroovy outputs builder code not compatible with MarkupBuilder
+    * [GROOVY-1549] - Array equality is not treated same as List equality
+    * [GROOVY-1738] - Color settings not saving
+    * [GROOVY-1744] - Extreme performance problem when calling closures using &#39;shorthand&#39; notation
+    * [GROOVY-1776] - GroovyJ 0.1.9 corrupts compiler caches in IDEA Selena
+    * [GROOVY-1860] - Problem calling override method with different return type.
+    * [GROOVY-1863] - Groovy compiler executes code it is compiling
+    * [GROOVY-1913] - Problem when running script that uses java covariants
+    * [GROOVY-1962] - add a stream based class reader and an optional java5 module
+    * [GROOVY-1978] - static imports not working with groovy classes
+    * [GROOVY-1995] - minus(List self, Collection removeMe) throws IllegalStateException for dupplicate values
+    * [GROOVY-2126] - ClassCastException when using java.util.prefs package
+    * [GROOVY-2130] - Use of java iterators in for loop is syntax error
+    * [GROOVY-2132] - Filter stacktraces in the new shell
+    * [GROOVY-2133] - Static imports not working inside closures
+    * [GROOVY-2136] - Static import of properties and fields does not work
+    * [GROOVY-2137] - Enum class does not load
+    * [GROOVY-2139] - Can not  init instances with super(...)
+    * [GROOVY-2141] - ExpandoMetaClass has concurrency modification issues with multiple threads
+    * [GROOVY-2150] - ClosureMetaClass regression (mapping of ArrayLIst to parameters)
+    * [GROOVY-2152] - Stacktrace in the new shell
+    * [GROOVY-2153] - BUG! exception in phase &#39;semantic analysis&#39; 
+    * [GROOVY-2155] - Some additional static import regressions since beta-2
+    * [GROOVY-2156] - Parameter annotations cannot be queried at runtime
+    * [GROOVY-2157] - Elvis operator is evaluating the &quot;true&quot; expression twice
+    * [GROOVY-2158] - Code crashing in new shell but not in old
+    * [GROOVY-2159] - Stub generator does not generate stubs for Groovy sub classes
+    * [GROOVY-2165] - GroovyClassLoader dead lock situation with multiple threads
+    * [GROOVY-2166] - ExpandoMetaClass causes exceptions with multiple threads, need to sync on isInitialised()
+    * [GROOVY-2167] - Occasional NPE with multiple threads with class caching mechanism
+    * [GROOVY-2169] - NPE in GroovyScriptEngine
+    * [GROOVY-2170] - Purge commands don&#39;t work anymore in the new shell
+    * [GROOVY-2180] - LoaderConfiguration is broken for relative paths
+    * [GROOVY-2181] - NPE generated groovydoc documentation
+    * [GROOVY-2187] - GString as String[] returns a 1-element array with the whole text
+    * [GROOVY-2188] - missing coercion for array
+    * [GROOVY-2190] - check generics usage in class header
+    * [GROOVY-2194] - The method primitiveArrayToList doesn&#39;t checks for nulls inside arrays causing NPE
+    * [GROOVY-2198] - owner/delegatechain is broken for multiple delegates
+
+
+** New Feature
+    * [GROOVY-174] - Round Peg, Square Hole
+    * [GROOVY-604] -  Provide parsing errors and warnings
+    * [GROOVY-605] -  Automatic imports
+    * [GROOVY-608] - Provide refactoring capabilities
+    * [GROOVY-611] - Intention actions
+    * [GROOVY-614] - Add an Outline/File structure pane
+    * [GROOVY-1851] - Expose unary plus and unary minus operators as interceptable method calls: positive() and negative()
+    * [GROOVY-2131] - Map implementation that fires PropertyChangeEvents
+    * [GROOVY-2174] - Add commands to capture/manage a complete transcript of a groovysh session
+    * [GROOVY-2175] - Add something like pythons {{sys.displayhook}} to the new groovysh
+    * [GROOVY-2176] - Install SecurityManager for groovysh to prevent unwanted System.exit()
+
+
+** Improvement
+    * [GROOVY-1314] - support covariant return types (&amp; generics)
+    * [GROOVY-1737] - Map unary negation operator to a method and be able to overload it via a Category
+    * [GROOVY-1832] - XMLParser: remove method on NodeList returns true (success).  But, Node is not removed.
+    * [GROOVY-1835] - Allow string coercion into classes
+    * [GROOVY-1977] - Allow static and default to be used as property names after the dereference operator
+    * [GROOVY-1979] - SimpleTemplateEngine (and poentially other TemplateEngines) should allow caller to specify classloader
+    * [GROOVY-1996] - Groovy-all pom.xml has dependency to an outdated version of Castor
+    * [GROOVY-2053] - Re-write InteractiveShell (aka. groovysh) in Groovy
+    * [GROOVY-2068] - Extract a FactoryBuilder from SwingBuilder
+    * [GROOVY-2102] - Groovy-all pom.xml omits &lt;optional&gt; tag for its optional dependencies
+    * [GROOVY-2140] - Handle Null Attributes in MarkupBuilder
+    * [GROOVY-2142] - Add new metaClass property to all objects to unify access to meta class across instances
+    * [GROOVY-2162] - The unary negate &quot;~&quot; operator could work with any kind of object, not just numbers and strings
+    * [GROOVY-2172] - Change the new groovysh IO debug/verbose/quiet to a single verbosity field
+    * [GROOVY-2173] - Create a Main CLI class for the new groovysh, to free Groovysh from those details
+    * [GROOVY-2179] - Make the *new* groovysh the default
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</textarea>
+
+</body>
+                </section><!-- .aui-page-panel-content -->
+        </div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel -->
+
+    </section>
+    <footer id="footer" role="contentinfo">
+        
+        
+
+<section class="footer-body">
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" rel="nofollow" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+                                            <span id="footer-build-information">(v7.6.3#76005-<span title='8a4e38d34af948780dbf52044e7aafb13a7cae58' data-commit-id='8a4e38d34af948780dbf52044e7aafb13a7cae58}'>sha1:8a4e38d</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" rel="nofollow" href="/jira/secure/AboutPage.jspa/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+        <a id="footer-report-problem-link" rel="nofollow" href="/jira/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+    <ul class="atlassian-footer">
+        <li class="licensemessage">
+                Powered by a free Atlassian <a rel='nofollow' href='http://www.atlassian.com/software/jira'>JIRA</a> open source license for Apache Software Foundation. Try JIRA - <a rel='nofollow' href='http://www.atlassian.com/software/jira'>bug tracking software</a> for <i>your</i> team.
+
+        </li>
+    </ul>
+
+    <div id="footer-logo"><a rel="nofollow" href="http://www.atlassian.com/">Atlassian</a></div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<fieldset class="hidden parameters">
+    <input type="hidden" title="loggedInUser" value="">
+    <input type="hidden" title="ajaxTimeout" value="The call to the JIRA server did not complete within the timeout period.  We are unsure of the result of this operation.">
+    <input type="hidden" title="JiraVersion" value="7.6.3" />
+    <input type="hidden" title="ajaxUnauthorised" value="You are not authorised to perform this operation. Please log in.">
+    <input type="hidden" title="baseURL" value="https://issues.apache.org/jira" />
+    <input type="hidden" title="ajaxCommsError" value="The JIRA server could not be contacted. This may be a temporary glitch or the server may be down. ">
+    <input type="hidden" title="ajaxServerError" value="The JIRA server was contacted but has returned an error response. We are unsure of the result of this operation.">
+    <input type="hidden" title="ajaxErrorCloseDialog" value="Close this dialog and press refresh in your browser">
+    <input type="hidden" title="ajaxErrorDialogHeading" value="Communications Breakdown">
+
+    <input type="hidden" title="dirtyMessage" value="You have entered new data on this page. If you navigate away from this page without first saving your data, the changes will be lost.">
+    <input type="hidden" title="dirtyDialogMessage" value="You have entered new data in this dialog. If you navigate away from this dialog without first saving your data, the changes will be lost. Click cancel to return to the dialog.">
+    <input type="hidden" title="keyType" value="Type">
+    <input type="hidden" title="keyThen" value="then">
+    <input type="hidden" title="dblClickToExpand" value="Double click to expand">
+    <input type="hidden" title="actions" value="Actions">
+    <input type="hidden" title="removeItem" value="Remove">
+    <input type="hidden" title="workflow" value="Workflow">
+    <input type="hidden" title="labelNew" value="New Label">
+    <input type="hidden" title="issueActionsHint" value="Begin typing for available operations or press down to see all">
+    <input type="hidden" title="closelink" value="Close">
+    <input type="hidden" title="dotOperations" value="Operations">
+    <input type="hidden" title="dotLoading" value="Loading...">
+    <input type="hidden" title="frotherSuggestions" value="Suggestions">
+    <input type="hidden" title="frotherNomatches" value="No Matches">
+    <input type="hidden" title="multiselectVersionsError" value="{0} is not a valid version.">
+    <input type="hidden" title="multiselectComponentsError" value="{0} is not a valid component.">
+    <input type="hidden" title="multiselectGenericError" value="The value {0} is invalid.">
+</fieldset>
+
+    </footer>
+</div>
+
+
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/1.0/_/download/batch/jira.webresources:bigpipe-js/jira.webresources:bigpipe-js.js" data-wrm-key="jira.webresources:bigpipe-js" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e-CDN/7lkp9w/76005/1c78b578e5c0e813799ab2baea47b6f7/1.0/_/download/batch/jira.webresources:bigpipe-init/jira.webresources:bigpipe-init.js" data-wrm-key="jira.webresources:bigpipe-init" data-wrm-batch-type="resource" data-initially-rendered></script>
+
+<form id="jira_request_timing_info" class="dont-default-focus" >
+	<fieldset class="parameters hidden">
+		<input type="hidden" title="jira.request.start.millis" value="1531359299558" />
+		<input type="hidden" title="jira.request.server.time" value="116" />
+		<input type="hidden" title="jira.request.id" value="94x9218473x1" />
+		<input type="hidden" title="jira.session.expiry.time" value="1531362897476" />
+		<input type="hidden" title="jira.session.expiry.in.mins" value="59" />
+		<input id="jiraConcurrentRequests" type="hidden" name="jira.request.concurrent.requests" value="1" />
+		<input type="hidden" title="issue.index.reads.time.in.ms" value="75" />
+		<input type="hidden" title="db.conns.time.in.ms" value="2" />
+	</fieldset>
+</form>
+<!--
+	                 REQUEST ID : 94x9218473x1
+	          REQUEST TIMESTAMP : [12/Jul/2018:01:34:59 +0000]
+	               REQUEST TIME : 0.1160
+	                 ASESSIONID : kin8hi
+	        CONCURRENT REQUESTS : 1
+
+	             issue.index.reads : OpSnapshot{name='issue.index.reads', invocationCount=43, elapsedTotal=75900649, elapsedMin=279442, elapsedMax=46409573, resultSetSize=0, cpuTotal=0, cpuMin=0, cpuMax=0}
+	                      db.conns : OpSnapshot{name='db.conns', invocationCount=3, elapsedTotal=2903572, elapsedMin=873111, elapsedMax=1108420, resultSetSize=0, cpuTotal=0, cpuMin=0, cpuMax=0}
+-->
+
+</body>
+</html>
